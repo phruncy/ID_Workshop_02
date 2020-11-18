@@ -27,6 +27,7 @@ class Timer extends React.Component {
 
     start() 
     {        
+        this.setState({ start: new Date() })
         this.timer = setInterval(() => {
             // this.setState MUST be used to make changes (otherwise, the component won't rerender)
             this.setState({
