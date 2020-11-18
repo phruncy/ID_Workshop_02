@@ -11,6 +11,7 @@ class Timer extends React.Component {
         this.state = {
             start: new Date(),
             time : 0,
+            duration : 0
         };
         this.start = this.start.bind(this);
         this.stop = this.stop.bind(this);
@@ -25,7 +26,7 @@ class Timer extends React.Component {
     }
 
     start() 
-    {
+    {        
         this.timer = setInterval(() => {
             // this.setState MUST be used to make changes (otherwise, the component won't rerender)
             this.setState({
@@ -37,17 +38,22 @@ class Timer extends React.Component {
     stop() 
     {
         clearInterval(this.timer);
+        this.setState({ 
+            duration : this.state.duration + Date.now() - this.state.start.getTime(),
+            start: new Date() 
+        });
     }
 
     reset() {
         this.setState({
-            start: new Date()
+            start: new Date(),
+            duration: 0
         });
     }
 
     // render returns the JSX that describes the look of the component
     render() {
-        const currentTimer = Date.now() - this.state.start.getTime();
+        const currentTimer = Date.now() - this.state.start.getTime() + this.state.duration;
         const millis = Math.floor(currentTimer/ 10) % 100;
         const seconds = Math.floor(currentTimer / 1000) % 60;
         const minutes = Math.floor(currentTimer / 60000) % 60;
