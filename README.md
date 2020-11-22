@@ -3,7 +3,7 @@ Materials for the second interaction design workshop
 
 ## The application
 
-Try out the stopatch application [here](https://phruncy.github.io/ID_Workshop_02/)
+Try out the stopwatch application [here](https://phruncy.github.io/ID_Workshop_02/)
 
 ## Node
 
