@@ -1,6 +1,10 @@
 # ID_Workshop_02
 Materials for the second interaction design workshop
 
+## The application
+
+Try out the stopatch application [here](https://phruncy.github.io/ID_Workshop_02/)
+
 ## Node
 
 - [Download Node](https://nodejs.org/en/) from the official website
