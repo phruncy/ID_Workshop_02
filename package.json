@@ -1,5 +1,5 @@
 {
-  "name": "timer-demo",
+  "name": "ID_Workshop_02",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://phruncy.github.io/timer-demo"
+  "homepage": "https://phruncy.github.io/ID_Workshop_02"
 }
